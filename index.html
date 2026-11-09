@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3ebe2"><meta name="description" content="Ember：每日一小时，四项技能、真实语境与间隔复习，走向 IELTS 7.5。">
+  <title>Ember</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+  <script defer src="content-a.js"></script><script defer src="content-b.js"></script><script defer src="engine.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a href="#main" class="skip">跳转到内容</a>
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="#today" aria-label="Ember 首页"><span class="brand-icon">e</span><span>Ember<span class="brand-dot">.</span><small>雅思学习工作室</small></span></a>
+  <nav id="nav" aria-label="主导航"></nav>
+  <button class="profile" data-action="nav" data-view="settings"><span class="avatar">D</span><span><strong>学习设置</strong><small>2027 · 目标 IELTS 7.5</small></span><span class="profile-arrow">↗</span></button>
+</aside>
+<div class="workspace">
+  <header class="topbar"><button class="mobile-menu icon-button" data-action="menu" aria-label="展开菜单">☰</button><span id="breadcrumb">Ember / 今日学习</span><div class="top-actions"><span class="local-status"><i></i> 本机自动保存</span><button id="timer-toggle" class="timer-pill" data-action="timer" aria-label="开始或暂停学习计时">▷ <span id="timer-time">60:00</span></button></div></header>
+  <main id="main" tabindex="-1"></main>
+</div>
+<audio id="word-audio" preload="none"></audio>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="app-error" hidden role="alert"></div>
+</body></html>
